@@ -2,12 +2,7 @@ package main
 
 import "fmt"
 
-/**            10
-               / \
-              5  12
-             / \
-            4  7
- */
+
 
 type Node struct {
 	data int
@@ -35,6 +30,12 @@ func (t *Tree) GetPaths(node *Node)  {
 	t.onePath = t.onePath[:len(t.onePath)-1]
 }
 
+/**            10
+               / \
+              5  12
+             / \
+            4  7
+ */
 func main()  {
 	node10 := Node{data:10}
 	node5 := Node{data:5}
